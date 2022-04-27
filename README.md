@@ -13,7 +13,7 @@ How to use new xauth login:
 	use Abraham\TwitterOAuth\TwitterOAuth;
 
 	$username = 'twitterUsername';
-	$password = 'twitterPassword'
+	$password = 'twitterPassword';
 	$conncet = new TwitterOAuth(CONSUMER_KEY,CONSUMER_SECRET);
 	$connect->setApiVersion('1.1');
 	$addUser = $connect->getXAuthToken($username, $password);
