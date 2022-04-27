@@ -3,8 +3,18 @@
 
 <p itemprop="description">The most popular PHP library for Twitter's OAuth REST API.</p>
 
-See documentation at https://twitteroauth.com.
 
-PHP versions [listed](https://secure.php.net/supported-versions.php) as "active support" or "security fixes only" are supported.
+How to use new xauth login:
 
-<img src="https://raw.githubusercontent.com/abraham/twitteroauth-demo/master/images/twitter-logo-blue.png" itemprop="image" alt="Twitter bird" width="200px">
+<code>
+require "vendor/autoload.php";
+
+use Abraham\TwitterOAuth\TwitterOAuth;
+  
+  $username = 'twitterUsername';
+	$password = 'twitterPassword'
+	$conncet = new TwitterOAuth(CONSUMER_KEY,CONSUMER_SECRET);
+	$connect->setApiVersion('1.1');
+	$addUser = $connect->getXAuthToken($username, $password);
+  
+</code>
