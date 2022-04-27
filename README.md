@@ -7,14 +7,14 @@
 How to use new xauth login:
 
 <code>
-require "vendor/autoload.php";
+	
+	require "vendor/autoload.php";
 
-use Abraham\TwitterOAuth\TwitterOAuth;
-  
-  $username = 'twitterUsername';
+	use Abraham\TwitterOAuth\TwitterOAuth;
+
+	$username = 'twitterUsername';
 	$password = 'twitterPassword'
 	$conncet = new TwitterOAuth(CONSUMER_KEY,CONSUMER_SECRET);
 	$connect->setApiVersion('1.1');
 	$addUser = $connect->getXAuthToken($username, $password);
-  
 </code>
